@@ -60,19 +60,19 @@ const uiComponent = () => (
       />
       <Button
         uiTransform={{ width: 100, height: 40, margin: 8 }}
-        value='Spawn cube'
+        value='Trigger Emote'
         variant='primary'
         fontSize={14}
         onMouseDown={() => {
           console.log('pressed')
-          createBlockPlayer(1 + Math.random() * 8, Math.random() * 8, 1 + Math.random() * 8, false)
+          createBlockPlayer()
           emotez()
           
         }}
       />
       <Button
         uiTransform={{ width: 100, height: 40, margin: 8 }}
-        value='Remove cube'
+        value='Emote End event'
         variant='primary'
         fontSize={14}
         onMouseDown={() => {

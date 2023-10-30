@@ -56,7 +56,7 @@ export function main() {
     pointerEventsSystem.onPointerDown(
       { entity: cube, opts: { button: InputAction.IA_POINTER, hoverText: 'spawn' } },
       () => {
-        console.log('pressed')
+        // console.log('pressed')
         // createCube(1 + Math.random() * 8, Math.random() * 8, 1 + Math.random() * 8, false)
         // createBlockPlayer()
         BounceScaling.createOrReplace(cube)
@@ -83,7 +83,7 @@ export function emotez(){
       //   }
       // )
 }
-export function createBlockPlayer(x: number, y: number, z: number, spawner = true){
+export function createBlockPlayer(){
   const PlayerTransform = Transform.get(engine.PlayerEntity);
 
   console.log('pos'+PlayerTransform.position)
